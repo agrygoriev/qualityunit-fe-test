@@ -1,0 +1,73 @@
+.pricing-block {
+  @include container;
+  flex-direction: column;
+  padding: 50px 30px;
+  justify-content: center;
+  background: url(../../assets/pricing-block-bg.png) center no-repeat;
+  background-size: cover;
+  &-headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 50px;
+    h2 {
+      font-size: 2rem;
+      @media (max-width: 1600px) {
+        line-height: 1.2;
+      }
+    }
+    h2, p {
+      margin-bottom: 15px;
+    }
+    .button.button-gradient {
+      padding: 0 70px;
+      margin-bottom: 0;
+    }
+  }
+  &-tickets {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+      border-radius: 1rem;
+      background-color: $main-background;
+      box-shadow: $box-shadow;
+      margin-bottom: 20px;
+      @media screen and (min-width: 361px) {
+        padding: 40px;
+      }
+      img {
+        display: block;
+        width: 60px;
+        height: auto;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        color: $font-color-dark;
+        margin-bottom: 15px;
+      }
+      p {
+        color: $font-color-normal;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+        strong {
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: $font-color-dark;
+        }
+      }
+    }
+  }
+}

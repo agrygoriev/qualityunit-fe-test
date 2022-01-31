@@ -17,6 +17,8 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Remove list styles on ul, ol elements */
@@ -35,6 +37,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */

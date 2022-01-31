@@ -12,22 +12,9 @@
   }
   justify-content: center;
   align-items: flex-end;
-  background: url(../../assets/pricing-block-bg.png) center no-repeat;
+  background: url(../../../assets/pricing-block-bg.png) center no-repeat;
   background-size: cover;
   border-radius: 16px;
-  // &::before {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   height: 100%;
-  //   // width: 1380px;
-  //   background: url(../../assets/pricing-block-bg.png) center no-repeat;
-  //   background-size: cover;
-  //   border-radius: 16px;
-  //   left: 0;
-  //   top: 0;
-  //   z-index: -1;
-  // }
   &-headline {
     width: 40%;
     display: flex;

@@ -16,7 +16,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(../../assets/heroHeadline_bg.jpg) center top no-repeat;
+    background: url(../../../assets/heroHeadline_bg.jpg) center top no-repeat;
     background-size: cover;
     border-radius: 5em 0 0 5em;
     max-width: 48rem;
@@ -31,7 +31,7 @@
         width: 2.25rem;
         height: 2.25rem;
         display: block;
-        background: url(../../assets/chat_john.png) center center no-repeat;
+        background: url(../../../assets/chat_john.png) center center no-repeat;
         background-size: contain;
         content: "";
         margin-top: auto;
@@ -94,7 +94,7 @@
         max-width: calc(27ch + 3em);
         &::after {
           position: absolute;
-          content: url(../../assets/chat_read.svg);
+          content: url(../../../assets/chat_read.svg);
           right: .5em;
           bottom: 0;
         }
