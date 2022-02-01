@@ -1,0 +1,47 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media screen and (max-width: 425px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  h6 {
+    @include buttons-text;
+    font-weight: 700;
+    color: $font-color-level3;
+    margin-bottom: 1em;
+    @media screen and (max-width: 425px) {
+      margin: .875rem 1rem;
+      font-size: 1.25rem;
+    }
+  }
+  .clients-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    @media screen and (max-width: 425px) {
+      justify-content: center;
+    }
+    .client-logo {
+      &:not(:first-child) {
+        margin-left: 2em;
+      }
+      img {
+        width: 100%;
+      }
+      filter: grayscale(0) brightness(50) brightness(0.65);
+      max-width: 6rem;
+      @media screen and (max-width: 425px) {
+        margin: 20px auto;
+        width: 33%;
+        max-width: 7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    .button {
+      margin-right: 0;
+    }
+  }
+}
